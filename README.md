@@ -25,6 +25,6 @@ Using the node install the "npm install -g yarn" because using this yarn we are 
 examples folder /strapi/emaples/getstarted/
 
 ### 🟢 Step 5 : We should run the "yarn develop" command inside the folder only. Otherwise it won't run. It will give the error only.
-Now can access the <ip>:1337/admin
+Now can access the 23.22.137.32:1337/admin
 
 ### 🟢 Step 6: Finally we added the content files on strapi admin panel.
