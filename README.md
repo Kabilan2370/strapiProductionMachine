@@ -1,15 +1,25 @@
-<h2>Build the strapi application, build and develop it</h2>
+## Build and Develop the Strapi Application
 
-<h4>To run and develop this strapi, we need at least 2cpu and 8GB ram. Othervise it will lag too much.</h4>
+### ⚙️ Server Requirements
+To run and develop a Strapi application smoothly, you need **at least 2 vCPUs and 8 GB RAM**.  
+Otherwise, the server will lag heavily during the build process.
 
-Here I used t3.large cpu and 8GB ram. I tried with t3.medium with 2 GB swap but It didn't work.
-So, finally I choosed this instance type to run.
+I initially tried using a **t3.medium with 2 GB swap**, but it was not sufficient.  
+Finally, I chose **t3.large (2 vCPU, 8 GB RAM)**, which worked well.
 
-First install the nodejs on your machine and install the neccessary files.
+---
+
+### 🟢 Step 1: Install Node.js and Yarn
+Install Node.js on your machine.  
+Then install Yarn globally:
+
+### 🟢 Step 2: First install the nodejs on your machine and install the neccessary files.
 Using the node install the "npm install -g yarn" because using this yarn we are going to build and develop the strapi.
 
-Once I build the code I didn't start. I was confused then after enquired the issue the strapi project files is inside the
+### 🟢 Step 3: Once I build the code I didn't start. I was confused then after enquired the issue the strapi project files is inside the
 examples folder /strapi/emaples/getstarted/
 
-We should run the "yarn develop" command inside the folder only. Otherwise it won't run. It will give the error only.
+### 🟢 Step 4 : We should run the "yarn develop" command inside the folder only. Otherwise it won't run. It will give the error only.
 Now can access the <ip>:1337/admin
+
+### 🟢 Step 5: Finally we added the content files on strapi admin panel.
