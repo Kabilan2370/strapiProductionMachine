@@ -1,5 +1,8 @@
 ## Build and Develop the Strapi Application
 
+## Here I have attached my Strapi project explanation video uploaded to Google Drive. I faced some issues with Loom on my laptop, so I recorded and uploaded the video using Google Drive instead
+https://drive.google.com/file/d/15DuYyxcfetZt3jumKjRoERasRDs-YH6D/view?usp=sharing
+
 ### ⚙️ Server Requirements
 To run and develop a Strapi application smoothly, you need **at least 2 vCPUs and 8 GB RAM**.  
 Otherwise, the server will lag heavily during the build process.
