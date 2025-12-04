@@ -1,7 +1,9 @@
 ## Build and Develop the Strapi docker image using dockerfile and launched as docker container
-![docker-starpi.png]
 
-lomm link : https://www.loom.com/share/f88349ceb9084231b8413fadf4d6e7ba
+![Alt Text](./docker-strapi.png)
+
+[loome link]([https://example.com](https://www.loom.com/share/f88349ceb9084231b8413fadf4d6e7ba))
+
 ### ⚙️ Server Requirements
 To run and develop a Strapi application smoothly, you need **at least 2 vCPUs and 8 GB RAM**.  
 Otherwise, the server will lag heavily during the build process. So I used t3.large instance type.
