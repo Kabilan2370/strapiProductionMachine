@@ -1,61 +1,22 @@
-# 🚀 Getting started with Strapi
-
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
-
-### `develop`
-
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
-
-```
-npm run develop
-# or
-yarn develop
-```
-
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-```
-yarn strapi deploy
-```
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+## Build and Develop the Strapi docker image using dockerfile and launched as docker container
+https://www.loom.com/share/f88349ceb9084231b8413fadf4d6e7ba
+### ⚙️ Server Requirements
+To run and develop a Strapi application smoothly, you need **at least 2 vCPUs and 8 GB RAM**.  
+Otherwise, the server will lag heavily during the build process. So I used t3.large instance type.
 
 ---
+### 🟢 Step 1: Created a Strapi project locally on my machine using the Strapi CLI.
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+### 🟢 Step 2: Wrote a Dockerfile to containerize the Strapi application.
+
+### 🟢 Step 3: First install the nodejs on your machine and install the neccessary files.
+Using the node install the "npm install -g yarn" because using this yarn we are going to build and develop the strapi.
+
+### 🟢 Step 4: Built a Docker image from the Dockerfile using docker build.
+sudo docker build --no-cache -t strapi-docker .
+
+### 🟢 Step 5 : Launched the Strapi application by running the Docker container with port forwarding using -p 1337:1337.
+sudo docker run -d --name strapi -p 1337:1337 strapi-docker
+
+### 🟢 Step 6: Accessed the Strapi Admin Panel through after the container started successfully.
+<instance-ip>:1337
