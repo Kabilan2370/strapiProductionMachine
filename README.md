@@ -2,7 +2,7 @@
 
 ![Alt Text](./docker-strapi.png)
 
-![loome link]([https://example.com](https://www.loom.com/share/f88349ceb9084231b8413fadf4d6e7ba))
+[loome link](https://www.loom.com/share/f88349ceb9084231b8413fadf4d6e7ba)
 
 ### ⚙️ Server Requirements
 To run and develop a Strapi application smoothly, you need **at least 2 vCPUs and 8 GB RAM**.  
