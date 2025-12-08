@@ -4,7 +4,7 @@
 
 Before installing any software we have to find out what operating system it runs on, what resources it needs, what other software it depends upon, is there any other software already installed that might interfere with the installation, and finally, how to install it. After installation comes the process of upgrading and maintaining the software. Computers have more than one application running. What if one application needs an upgrade in the dependency but another application runs on an older version of the dependency? Finally, when we want to remove a software we need to remember all the changes we had to do to install the software and then undo them after installation.
 
-The gist is, the more software we use, the more difficult it becomes to manage and run them. Docker solves portability, consistency, speed, and ease of deployment by packaging everything into containers that run the same everywhere.
+the more software we use, the more difficult it becomes to manage and run them. Docker solves portability, consistency, speed, and ease of deployment by packaging everything into containers that run the same everywhere.
       
 🖥️ 2. Difference between use of Virtual Machines vs Docker ?
 
@@ -24,7 +24,8 @@ When Docker is installed, the primary component installed is the Docker Engine. 
 
 
 📝 4. Dockerfile Deep Dive - Explain each line ?
-      Why do we create or use a Dockerfile? To create a Docker container, we first need a Docker image. There are two ways to get a Docker image: one is by using the docker pull command to download images from Docker Hub, and the other is by using a Dockerfile to create our own Docker image.
+
+Why do we create or use a Dockerfile? To create a Docker container, we first need a Docker image. There are two ways to get a Docker image: one is by using the docker pull command to download images from Docker Hub, and the other is by using a Dockerfile to create our own Docker image.
 A Dockerfile is a script composed of instructions that Docker uses to build an image. Each instruction creates a new layer in the image, contributing to the final image's structure.
 
 There are 18 official Dockerfile commands available and mostly used by everyone.
@@ -109,19 +110,14 @@ background                | `docker run -d httpd`            |
 
 🌐 6. Docker Networking
 
-Docker networking allows containers to communicate with:
-
-Each other
-
-The host machine
-
-External world
+Docker networking is the system that allows Docker containers to communicate with each other, with the Docker host, and with the outside world. It's a powerful feature that enables you to build complex, multi-container applications that are isolated yet interconnected.
 
 🔹 Types of Docker Networks
 
 Docker Networking ?
-.
+
 Docker networking is the system that allows Docker containers to communicate with each other, with the Docker host, and with the outside world. It's a powerful feature that enables you to build complex, multi-container applications that are isolated yet interconnected.
+
 1. bridge (default) - Used when you run containers normally
 
 docker run --network bridge nginx
@@ -172,6 +168,7 @@ Data Survival	No	Yes
 | Rebuild & start  | `docker compose up --build` |
 | Stop containers  | `docker compose down`       |
 | View logs        | `docker compose logs`       |
+
 
 
 
