@@ -82,8 +82,11 @@ There are 18 official Dockerfile commands available and mostly used by everyone.
 
 | Action                  | Command                          |
 | ----------------------- | -------------------------------- |
-| Run container           | `docker run image`               |
-| Run with port mapping   | `docker run -p 8080:80 image`    |
+| Run container           | `docker run httpd`               |
+| Run container in the 
+background                | `docker run -d httpd`            |
+| Assign a name           | `docker run -d --name web1 httpd`
+| Run with port mapping   | `docker run -p 8080:80 httpd`    |
 | Start container         | `docker start con1`              |
 | Stop container          | `docker stop con1`               |
 | List running containers | `docker ps`                      |
@@ -169,6 +172,7 @@ Data Survival	No	Yes
 | Rebuild & start  | `docker compose up --build` |
 | Stop containers  | `docker compose down`       |
 | View logs        | `docker compose logs`       |
+
 
 
 
