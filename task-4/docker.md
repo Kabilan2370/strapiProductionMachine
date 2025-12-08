@@ -10,7 +10,7 @@ The gist is, the more software we use, the more difficult it becomes to manage a
 
 Containers and virtual machines are very similar resource virtualization technologies. Virtualization is the process in which a system singular resource like RAM, CPU, Disk, or Networking can be ‘virtualized’ and represented as multiple resources. 
 
-The key differentiator between containers and virtual machines is that virtual machines virtualize an entire machine down to the hardware layers and containers only virtualize software layers above the operating system level.
+The key differentiator between containers and virtual machines is that **virtual machines virtualize an entire machine down to the hardware layers and containers only virtualize software layers above the operating system level.**
 
 ⚙️ 3. Understanding Docker Architecture -  What gets installed when Docker is installed ?
 
@@ -172,6 +172,7 @@ Data Survival	No	Yes
 | Rebuild & start  | `docker compose up --build` |
 | Stop containers  | `docker compose down`       |
 | View logs        | `docker compose logs`       |
+
 
 
 
