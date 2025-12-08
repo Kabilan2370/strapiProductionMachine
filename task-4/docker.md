@@ -70,39 +70,39 @@ There are 18 official Dockerfile commands available and mostly used by everyone.
 
 📌 Image Commands
 
-Action					Command
+| Action       | Command                   |
+| ------------ | ------------------------- |
+| Build image  | `docker build -t myapp .` |
+| List images  | `docker images`           |
+| Remove image | `docker rmi image_id`     |
+| Pull image   | `docker pull nginx`       |
 
-Build image				docker build -t myapp .
-List images				docker images
-Remove image			docker rmi image_id
-Pull image				docker pull nginx
 
 📌 Container Commands
 
-Action					          Command
+| Action                  | Command                          |
+| ----------------------- | -------------------------------- |
+| Run container           | `docker run image`               |
+| Run with port mapping   | `docker run -p 8080:80 image`    |
+| Start container         | `docker start con1`              |
+| Stop container          | `docker stop con1`               |
+| List running containers | `docker ps`                      |
+| List all containers     | `docker ps -a`                   |
+| Remove container        | `docker rm id`                   |
+| View logs               | `docker logs id`                 |
+| Login to container      | `docker exec -it con1 /bin/bash` |
 
-Run container			        docker run image
-Run with port mapping		  docker run -p 8080:80 image
-Start existing				    docker start con1(container_name)
-Stop container			      docker stop con1(container_name)
-See running containers		docker ps
-See all containers			  docker ps -a
-Remove container			    docker rm id
-View logs				          docker logs id
-Login into container			docker exec -it con1(container_name) /bin/bash
 
 
 📌 System Commands
 
-Action					Command
+| Action                  | Command               |
+| ----------------------- | --------------------- |
+| Remove unused resources | `docker system prune` |
+| Docker version          | `docker version`      |
+| System info             | `docker info`         |
+| Inspect object          | `docker inspect con1` |
 
-Removes unused Docker objects 		docker system prune
-networks, and build cache) 
-Displays Docker version info		  docker version
-Displays system-wide information	docker info
-regarding
-information about                 docker inspect con1(container_name)
-a Docker object	
 
 🌐 6. Docker Networking
 
@@ -163,12 +163,13 @@ Data Survival	No	Yes
 
 🔹 Docker Compose Commands
 
-Action	                Command
+| Action           | Command                     |
+| ---------------- | --------------------------- |
+| Start containers | `docker compose up`         |
+| Rebuild & start  | `docker compose up --build` |
+| Stop containers  | `docker compose down`       |
+| View logs        | `docker compose logs`       |
 
-Start containers	      docker compose up
-Rebuild & start	        docker compose up --build
-Stop containers	        docker compose down
-View logs	              docker compose logs
 
 
 
