@@ -1,12 +1,16 @@
 ### 📦 Docker Overview & Key Concepts
 
 🚀 1. Explain the problem Docker solves ?
-    * Before installing any software we have to find out what operating system it runs on, what resources it needs, what other software it depends upon, is there any other software already installed that might interfere with the installation, and finally, how to install it. After installation comes the process of upgrading and maintaining the software. Computers have more than one application running. What if one application needs an upgrade in the dependency but another application runs on an older version of the dependency? Finally, when we want to remove a software we need to remember all the changes we had to do to install the software and then undo them after installation.
-    * The gist is, the more software we use, the more difficult it becomes to manage and run them. Docker solves portability, consistency, speed, and ease of deployment by packaging everything into containers that run the same everywhere.
+
+Before installing any software we have to find out what operating system it runs on, what resources it needs, what other software it depends upon, is there any other software already installed that might interfere with the installation, and finally, how to install it. After installation comes the process of upgrading and maintaining the software. Computers have more than one application running. What if one application needs an upgrade in the dependency but another application runs on an older version of the dependency? Finally, when we want to remove a software we need to remember all the changes we had to do to install the software and then undo them after installation.
+
+The gist is, the more software we use, the more difficult it becomes to manage and run them. Docker solves portability, consistency, speed, and ease of deployment by packaging everything into containers that run the same everywhere.
       
 🖥️ 2. Difference between use of Virtual Machines vs Docker ?
-    * Containers and virtual machines are very similar resource virtualization technologies. Virtualization is the process in which a system singular resource like RAM, CPU, Disk, or Networking can be ‘virtualized’ and represented as multiple resources. 
-    * The key differentiator between containers and virtual machines is that virtual machines virtualize an entire machine down to the hardware layers and containers only virtualize software layers above the operating system level.
+
+Containers and virtual machines are very similar resource virtualization technologies. Virtualization is the process in which a system singular resource like RAM, CPU, Disk, or Networking can be ‘virtualized’ and represented as multiple resources. 
+
+The key differentiator between containers and virtual machines is that virtual machines virtualize an entire machine down to the hardware layers and containers only virtualize software layers above the operating system level.
 
 ⚙️ 3. Understanding Docker Architecture -  What gets installed when Docker is installed ?
 
@@ -165,5 +169,6 @@ Start containers	      docker compose up
 Rebuild & start	        docker compose up --build
 Stop containers	        docker compose down
 View logs	              docker compose logs
+
 
 
