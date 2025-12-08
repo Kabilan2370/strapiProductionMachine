@@ -1,5 +1,9 @@
 ### 📦 Docker Overview & Key Concepts
 
+## What is Docker ? Why we are using it ?
+
+Docker is an open-source platform that enables developers to build, ship, and run applications in lightweight, portable units called containers. These containers package an application and all its dependencies (libraries, system tools, code, runtime) into a single, isolated unit.
+
 🚀 1. Explain the problem Docker solves ?
 
 Before installing any software we have to find out what operating system it runs on, what resources it needs, what other software it depends upon, is there any other software already installed that might interfere with the installation, and finally, how to install it. After installation comes the process of upgrading and maintaining the software. Computers have more than one application running. What if one application needs an upgrade in the dependency but another application runs on an older version of the dependency? Finally, when we want to remove a software we need to remember all the changes we had to do to install the software and then undo them after installation.
@@ -168,6 +172,7 @@ Data Survival	No	Yes
 | Rebuild & start  | `docker compose up --build` |
 | Stop containers  | `docker compose down`       |
 | View logs        | `docker compose logs`       |
+
 
 
 
